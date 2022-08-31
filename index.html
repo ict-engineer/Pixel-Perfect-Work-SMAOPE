@@ -1,0 +1,467 @@
+<!-- HTMLコード -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>スマオペ</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/theme.css">
+
+    <!-- javascript -->
+    <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body class="home">
+    <header>
+        <div class="site-header">
+            <h1 class="logo">
+                <a href="#"><img src="./assets/img/logo.png" alt="Smart Operation スマオペ" /></a>
+            </h1>
+            <a href="#" class="header-btn-trial">無料トライアル</a>
+        </div>
+    </header>
+
+    <section id="main-visual" class="main-visual">
+        <div class="sec-inner">
+            <h2 class="mv-ttl"><img src="./assets/img/mv-title.png" alt="かんたんマニュアル作成ツール"></h2>
+            <div class="mv-row">
+                <div class="mv-figure">
+                    <img src="./assets/img/mv-figure.png" alt="" />
+                </div>
+                <div class="mv-lead">
+                    <div class="mv-lead-fig">
+                        <img src="./assets/img/mv-lead.png" alt="" />
+                    </div>
+                    <a href="#" class="mv-btn-trial">今すぐ無料トライアル</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem" class="problem">
+        <div class="sec-inner">
+            <h3 class="sec-ttl">
+                <span>Problem</span>
+                <img src="./assets/img/problem-ttl.png" alt="このような悩みを抱えてませんか？" />
+            </h3>
+
+            <div class="prob-list">
+                <div class="prob-item">
+                    <div class="prob-fig">
+                        <img src="./assets/img/problem-01.png" alt="" />
+                    </div>
+                    <div class="prob-ttl">
+                        マニュアル作成に<br>時間を費やしたくない
+                    </div>
+                </div>
+
+                <div class="prob-item">
+                    <div class="prob-fig">
+                        <img src="./assets/img/problem-02.png" alt="" />
+                    </div>
+                    <div class="prob-ttl">
+                        「いつ」「誰が」「何の」<br>マニュアルを使って<br>仕事をしたかわならない
+                    </div>
+                </div>
+
+                <div class="prob-item">
+                    <div class="prob-fig">
+                        <img src="./assets/img/problem-03.png" alt="" />
+                    </div>
+                    <div class="prob-ttl">
+                        たくさん作ったマニュアルから<br>ほしいものが見つからない
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="point" class="point">
+        <h3 class="sec-ttl">
+            <span>Point</span>
+            <img src="./assets/img/point-ttl.png" alt="スマオペで全て解決できます！" />
+        </h3>
+
+        <div class="point-list">
+            <div class="point-item row-reverse">
+                <div class="point-fig">
+                    <img src="./assets/img/point-fig-01.png" alt="" />
+                </div>
+                <div class="point-info">
+                    <div class="point-info-wrap">
+                        <div class="point-info-no">
+                            <img src="./assets/img/point-no-01.png" alt="" />                        
+                        </div>
+                        <h4 class="point-info-ttl">操作は簡単<br>マニュアル１つ<br>わずか<span>10分で作成可能</span></h4>
+                        <p class="point-info-txt">
+                            写真を撮影し、わかりやすく加工。あとは説明文を入力するだけで1ページ完成！<br>
+                            写真の加工も、手書きペイントや文字挿入、見せたくない部分にはモザイクをかけることができます。<br>
+                            動画、音声にも対応しているので、説明文を書くのはめんどうな時は喋っちゃいましょう。
+                        </p>
+                    </div>
+                    <div class="point-info-check-mark">
+                        <img src="./assets/img/point-check-mark.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="point-item">
+                <div class="point-fig">
+                    <img src="./assets/img/point-fig-02.png" alt="" />
+                </div>
+                <div class="point-info">
+                    <div class="point-info-wrap">
+                        <div class="point-info-no">
+                            <img src="./assets/img/point-no-02.png" alt="" />                        
+                        </div>
+                        <h4 class="point-info-ttl">チェックリスト機能で<br><span>作業の見える化</span></h4>
+                        <p class="point-info-txt">
+                            写真を撮影し、わかりやすく加工。あとは説明文を入力するだけで1ページ完成！<br>
+                            写真の加工も、手書きペイントや文字挿入、見せたくない部分にはモザイクをかけることができます。<br>
+                            動画、音声にも対応しているので、説明文を書くのはめんどうな時は喋っちゃいましょう。
+                        </p>
+                    </div>
+                    <div class="point-info-check-mark">
+                        <img src="./assets/img/point-check-mark-2.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="point-item row-reverse">
+                <div class="point-fig">
+                    <img src="./assets/img/point-fig-03.png" alt="" />
+                </div>
+                <div class="point-info">
+                    <div class="point-info-wrap">
+                        <div class="point-info-no">
+                            <img src="./assets/img/point-no-03.png" alt="" />                        
+                        </div>
+                        <h4 class="point-info-ttl">大量のマニュアルから<br><span>一発検索で</span><br>欲しい物が見つかる</h4>
+                        <p class="point-info-txt">
+                            写真を撮影し、わかりやすく加工。あとは説明文を入力するだけで1ページ完成！<br>
+                            写真の加工も、手書きペイントや文字挿入、見せたくない部分にはモザイクをかけることができます。<br>
+                            動画、音声にも対応しているので、説明文を書くのはめんどうな時は喋っちゃいましょう。
+                        </p>
+                    </div>
+                    <div class="point-info-check-mark">
+                        <img src="./assets/img/point-check-mark-2.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="service">
+        <div class="sec-inner">
+            <h3 class="sec-ttl">
+                <span>Service</span>
+                <img src="./assets/img/service-ttl.png" alt="その他の機能" />
+            </h3>
+
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-01.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">マニュアルをURL送信機能</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-02.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">ダブルチェック機能</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-03.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">ゲスト機能</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-04.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">ログ表示機能</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-05.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">完了メール通知機能</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-06.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">メモ付箋機能</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-07.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">改訂履歴機能</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-08.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">画像挿入</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-09.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">タブレット・<br>スマートフォンにも対応</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-10.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">マニュアル複製機能</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-11.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">フォルダ階層</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-fig">
+                        <img src="./assets/img/service-12.png" alt="" />
+                    </div>
+                    <h4 class="service-ttl">ドラッグ&ドロップで<br>順番入れ替え</h4>
+                    <p class="service-txt">
+                        簡単に顧客に関わる情報がすべて確認でき、他のツールは一切必要ありません。もちろん引渡し後のアフターフォローの記録も可能です。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="result" class="result">
+        <div class="sec-inner result-inner">
+            <h3 class="sec-ttl">
+                <img src="./assets/img/result-ttl.png" alt="スマオペを導入後スマオペを導入後" />
+            </h3>
+
+            <div class="result-list">
+                <div class="result-item">
+                    <h4 class="result-ttl">スマオペを導入後3ヶ月で</h4>
+                    <div class="result-fig">
+                        <img src="./assets/img/result-01.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <h4 class="result-ttl">1人で遅くまで残業していたが2ヶ月後には</h4>
+                    <div class="result-fig">
+                        <img src="./assets/img/result-02.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <h4 class="result-ttl">パート・アルバイトの入社研修後の</h4>
+                    <div class="result-fig">
+                        <img src="./assets/img/result-03.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <h4 class="result-ttl">仕事が属人的から見える化され</h4>
+                    <div class="result-fig">
+                        <img src="./assets/img/result-04.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <h4 class="result-ttl">お客様の先手に回って仕事ができるようになり</h4>
+                    <div class="result-fig">
+                        <img src="./assets/img/result-05.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <h4 class="result-ttl">何度も同じことを説明しなくなったので</h4>
+                    <div class="result-fig">
+                        <img src="./assets/img/result-06.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="performance" class="performance">
+        <div class="sec-inner">
+            <h3 class="sec-ttl">
+                <span>Performance</span>
+                <img src="./assets/img/performance-ttl.png" alt="様々な企業で使われています" />
+            </h3>
+
+            <h4 class="performance-ttl performance-icon-01">業 種</h4>
+            <div class="performance-list">
+                <p class="performance-item">IT・通信・インターネット業</p>
+                <p class="performance-item">学習塾</p>
+                <p class="performance-item">小売・卸売業</p>
+                <p class="performance-item">士業</p>
+                <p class="performance-item">ホテル旅館業</p>
+                <p class="performance-item">運送業</p>
+                <p class="performance-item">保険業</p>
+                <p class="performance-item">医療・福祉・介護サービス</p>
+                <p class="performance-item">レジャー・アミューズメント・スポーツ施設</p>
+            </div>
+
+            <h4 class="performance-ttl performance-icon-02">職 種</h4>
+            <div class="performance-list">
+                <p class="performance-item">事務</p>
+                <p class="performance-item">労務</p>
+                <p class="performance-item">福祉・介護サービス</p>
+                <p class="performance-item">Webマーケティング、リサーチ、分析</p>
+                <p class="performance-item">総務</p>
+                <p class="performance-item">営業</p>
+                <p class="performance-item">システムエンジニア</p>
+                <p class="performance-item">接客・販売</p>
+                <p class="performance-item">秘書</p>
+                <p class="performance-item">経理</p>
+                <p class="performance-item">運送ドライバー</p>
+                <p class="performance-item">カスタマーサポート</p>
+                <p class="performance-item">人事</p>
+                <p class="performance-item">介護スタッフ</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="media" class="media">
+        <div class="sec-inner media-inner">
+            <h3 class="sec-ttl">
+                <span>Media</span>
+                <img src="./assets/img/media-ttl.png" alt="メディア掲載実績" />
+            </h3>
+
+            <div class="media-logos">
+                <img src="./assets/img/media-logos.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <section id="flow" class="flow">
+        <div class="sec-inner media-inner">
+            <h3 class="sec-ttl">
+                <span>Flow</span>
+                <img src="./assets/img/flow-ttl.png" alt="メディア掲載実績" />
+            </h3>
+
+            <div class="flow-list">
+                <div class="flow-item">
+                    <p class="flow-no">STEP<span>01</span></p>
+                    <div class="flow-block">
+                        <div class="flow-fig">
+                            <img src="./assets/img/flow-01.png" alt="" />
+                        </div>
+                        <h4 class="flow-ttl">無料トライアルお申込み</h4>
+                        <p class="flow-txt">メールアドレスをご登録後、kinconeアカウントを発行します。パスワードの設定や会社情報などをご登録いただくだけで、ご利用を開始できます。</p>
+                    </div>
+                </div>
+
+                <div class="flow-item">
+                    <p class="flow-no">STEP<span>02</span></p>
+                    <div class="flow-block">
+                        <div class="flow-fig">
+                            <img src="./assets/img/flow-02.png" alt="" />
+                        </div>
+                        <h4 class="flow-ttl">ヒアリングとご提案</h4>
+                        <p class="flow-txt">お客様の課題・ご要望を営業がお伺いし、最適なプランをご提案いたします。</p>
+                        <div class="flow-next"></div>
+                    </div>
+                </div>
+
+                <div class="flow-item">
+                    <p class="flow-no">STEP<span>03</span></p>
+                    <div class="flow-block">
+                        <div class="flow-fig">
+                            <img src="./assets/img/flow-03.png" alt="" />
+                        </div>
+                        <h4 class="flow-ttl">無料トライアル体験</h4>
+                        <p class="flow-txt">お申込み月と翌月は、kinconeを無料でお試し頂けます。ご利用でご不明な点があれば、サポートセンターまでいつでもお問い合わせできます。</p>
+                        <div class="flow-next"></div>
+                    </div>
+                </div>
+
+                <div class="flow-item">
+                    <p class="flow-no">STEP<span>04</span></p>
+                    <div class="flow-block">
+                        <div class="flow-fig">
+                            <img src="./assets/img/flow-04.png" alt="" />
+                        </div>
+                        <h4 class="flow-ttl">正式導入</h4>
+                        <p class="flow-txt">お支払い画面から支払方法を設定頂くと、正式利用を開始できます。年額プランをご選択いただくと、ご利用料金の5%OFFでご利用が可能です。</p>
+                        <div class="flow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="support">
+    </section>
+
+    <section id="plan" class="plan">
+    </section>
+
+    <section id="faq" class="faq">
+    </section>
+
+    <footer>
+    </footer>
+
+    <script src="./assets/js/theme.js"></script>
+</body>
+</html>

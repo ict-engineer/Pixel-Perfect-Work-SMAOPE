@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* 変数 */
+$color-primary: #085AAA;
+$color-secondary: #FFE600;
+$color-third: #FDF451;
+$color01: #000000;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-v {
+    display: flex;
+    align-items: center;
+}
